@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jara Haffter — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,400;1,500&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Jara.</a>
+      <ul class="nav-links">
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#erfahrung">Erfahrung</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO — Hintergrund: CREAM ===== -->
+    <section id="hero" class="bg-cream">
+      <div class="hero-content reveal">
+        <p class="label">MEDIAMATIKERIN EFZ</p>
+        <h1>Hallo ich<br>bin Jara!</h1>
+        <p class="hero-text">Es freut mich Ihr Interesse geweckt zu haben. Hier dürft ihr mich besser kennenlernen und auch ein eigenes Bild von mir schaffen.</p>
+        <div class="hero-buttons">
+          <a href="#projekte" class="btn btn-gold">Projekte ansehen</a>
+          <a href="#kontakt" class="btn btn-outline">Kontaktieren</a>
+        </div>
+      </div>
+      <div class="hero-image reveal reveal-delay">
+        <div class="img-placeholder hero-img-box"></div>
+      </div>
+    </section>
+
+    <!-- ===== ÜBER MICH — Hintergrund: WEISS ===== -->
+    <section id="ueber-mich" class="bg-white">
+      <div class="ueber-grid">
+        <div class="ueber-image reveal">
+          <div class="img-placeholder ueber-img-box"></div>
+          <div class="ueber-meta">
+            <div class="meta-item">
+              <span class="meta-label">Wohnort</span>
+              <span>Buchs SG</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Nationalität</span>
+              <span>Schweiz</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Sprachen</span>
+              <span>Deutsch (Muttersprache)<br>Englisch (B2 – B2)<br>Französisch (Grundkenntnisse)</span>
+            </div>
+          </div>
+        </div>
+        <div class="ueber-text reveal reveal-delay">
+          <p class="label">ÜBER MICH</p>
+          <h2>Begeisterung<br>entfacht Ideen.</h2>
+          <div class="gold-line"></div>
+          <p>Mein Name ist Jara Haffner. Über Gestalten, Genuss und authentische Geschichten erzählen, sind Welten, die Wirkung zu passieren. Schreiben, Selbstständig sein und Mediamatik inspirieren mich täglich, ebenso wie die Freude an der Arbeit, den Bereichen Ski, Reiten und anderen Aktivitäten.</p>
+          <p>Als Mediamatikerin EFZ habe ich profundes Wissen angeeignet und grossartige erfahrene Mentoren und Freundinnen. Das Wissen und Kompetenzen reichen von Verwaltung und Kreativität sowie ausgeprägter Intuition bis zur gestalteten des Projekts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS — Hintergrund: CREAM ===== -->
+    <section id="skills" class="bg-cream">
+      <div class="section-inner">
+        <div class="skills-header reveal">
+          <p class="label">SKILLS</p>
+          <h2>Was ich<br>mitbringe.</h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <!-- Kompetenzen in Kästchen (3 Spalten mit Trennlinie oben) -->
+        <div class="skills-grid reveal reveal-delay">
+          <div class="skill-box">
+            <h3>Marketing</h3>
+            <p>Kampagnen,<br>Zielgruppenanalyse,<br>Analytics</p>
+          </div>
+          <div class="skill-box">
+            <h3>Multimedia</h3>
+            <p>Video, Animation,<br>Fotografie,<br>Grafikdesign</p>
+          </div>
+          <div class="skill-box">
+            <h3>Design</h3>
+            <p>Printgestaltung,<br>Konzeptentwicklung,<br>Kampagnenfindung</p>
+          </div>
+        </div>
+
+        <!-- Programme als ovale Buttons -->
+        <p class="programmes-label reveal reveal-delay">Programme</p>
+        <div class="programmes-pills reveal reveal-delay-2">
+          <span class="pill">Adobe Creative Cloud</span>
+          <span class="pill">Microsoft Office 365</span>
+          <span class="pill">Monday</span>
+          <span class="pill">Jama & MailChimp</span>
+          <span class="pill">Windows Grundkenntnisse</span>
+          <span class="pill">CSS Bildbearbeitung</span>
+          <span class="pill">Claude AI</span>
+          <span class="pill">ChatGPT</span>
+          <span class="pill">Midjourney</span>
+          <span class="pill">Figma / XD</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJEKTE — Hintergrund: WEISS ===== -->
+    <section id="projekte" class="bg-white">
+      <div class="section-inner">
+        <div class="projekte-header reveal">
+          <p class="label">PROJEKTE</p>
+          <h2>Meine<br>Projekte.</h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="projekte-grid reveal reveal-delay">
+          <div class="projekt-karte" onclick="openProject('abschlussarbeit')">
+            <div class="projekt-img img-placeholder"></div>
+            <div class="projekt-info">
+              <h3>Abschlussarbeit</h3>
+              <p>Neugestaltung und Vermarktung des neuen Ausstellungsraums</p>
+            </div>
+          </div>
+          <div class="projekt-karte" onclick="openProject('werbeclip')">
+            <div class="projekt-img img-placeholder projekt-dark"></div>
+            <div class="projekt-info">
+              <h3>Werbeclip</h3>
+              <p>30 Sek. Werbeclip für Vitamin Wien</p>
+            </div>
+          </div>
+          <div class="projekt-karte" onclick="openProject('digitalplakat')">
+            <div class="projekt-img img-placeholder"></div>
+            <div class="projekt-info">
+              <h3>Digital Plakat</h3>
+              <p>Besonders auffallendes digitales Plakat für das Festival</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ERFAHRUNG — Hintergrund: CREAM ===== -->
+    <section id="erfahrung" class="bg-cream">
+      <div class="section-inner">
+
+        <!-- Zeile oben: Titel links + Button rechts -->
+        <div class="erfahrung-top reveal">
+          <div>
+            <p class="label">ÜBER MICH</p>
+            <h2>Mein<br>Werdegang.</h2>
+            <div class="gold-line"></div>
+          </div>
+          <a href="#" class="btn btn-gold btn-small">Lebenslauf herunterladen</a>
+        </div>
+
+        <!-- Timeline unten, volle Breite -->
+        <div class="erfahrung-timeline reveal reveal-delay">
+          <div class="timeline-item">
+            <span class="timeline-date">Ab September 2026</span>
+            <h4>Teilzeitstudium Betriebsökonomie</h4>
+            <p>FHS – Ostschweizer Fachhochschule St. Gallen</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">August 2026</span>
+            <h4>Fachlich Sprachaufenthalt</h4>
+            <p>Sprachaufenthalt im englischsprachigen Ausland zur Vertiefung der Sprachkenntnisse.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2024 – Heute</span>
+            <h4>Praktikum Mediamatikerin EFZ</h4>
+            <p>In unserem zweigliedrigen Praktikum, habe ich Führung zu ihrer Ausbildung zu ihren Medienunternehmen Kompetenzen angewandt. Von Produkt Management und Masterplanung bis hin zu Marketing, Gestaltung, Design, Multimedia, Auditor, Design, Trend Abteilsleiter.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2022 – Heute</span>
+            <h4>Mediamatikerin EFZ mit BMS</h4>
+            <p>SBW Neue Medien</p>
+            <ul class="timeline-list">
+              <li>Marketing & Kommunikation</li>
+              <li>Projektmanagement</li>
+              <li>Administration</li>
+              <li>Design</li>
+              <li>ICT</li>
+              <li>Technische Skills</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== KONTAKT — Hintergrund: DUNKEL ===== -->
+    <section id="kontakt" class="bg-dark">
+      <div class="kontakt-inner reveal">
+        <p class="label label-gold">KONTAKT</p>
+        <h2>Lass uns<br>zusammenarbeiten.</h2>
+        <p>Ich würde mich freuen, Sie in einem persönlichen Gespräch genauer kennenzulernen!</p>
+        <div class="kontakt-buttons">
+          <a href="mailto:jara@example.com" class="btn btn-gold">E-Mail</a>
+          <a href="tel:+41" class="btn btn-outline-light">Telefonnummer</a>
+        </div>
+      </div>
+      <div class="kontakt-image reveal reveal-delay">
+        <div class="img-placeholder kontakt-img-box"></div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== PROJEKTSEITEN ==================== -->
+
+  <!-- ===== PROJEKT 1: ABSCHLUSSARBEIT ===== -->
+  <div id="project-abschlussarbeit" class="project-page">
+    <div class="project-page-inner">
+
+      <!-- Zurück-Link -->
+      <button class="back-btn" onclick="closeProject()">← Zurück zu mir</button>
+
+      <!-- Header: Titel + Meta -->
+      <header class="project-header bg-cream-page">
+        <h1>Neugesaltung und<br>Vermarktung<br>Ausstellungsraum</h1>
+        <div class="project-meta">
+          <div class="meta-col">
+            <span class="meta-label">Auftraggeber</span>
+            <p>SONDLCH</p>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Aufgabe</span>
+            <p>Neugestaltung, Umsetzung und Vermarktung Ausstellungsraum</p>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Kompetenzen</span>
+            <p>Projektmanagement,<br>Gestaltung,<br>Marketing,<br>Verkaufspsychologie</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- 3 Bilder nebeneinander, volle Breite -->
+      <div class="proj-img-row fullwidth">
+        <div class="img-placeholder proj-img"></div>
+        <div class="img-placeholder proj-img"></div>
+        <div class="img-placeholder proj-img"></div>
+      </div>
+
+      <!-- Ausgangslage — DUNKEL -->
+      <div class="proj-block bg-dark fullwidth">
+        <div class="proj-block-inner">
+          <p class="label label-gold">Ausgangslage</p>
+          <h2>Lagerraum<br>und Chaos.</h2>
+          <div class="gold-line"></div>
+          <div class="proj-text-side">
+            <p>Zu Beginn der Abschlussarbeit war der Ausstellungsraum unübersichtlich und wurde als Lagerraum statt als Präsentationsfläche genutzt. Es fehlten Struktur, Ordnung und ein ansprechendes Konzept. Ziel der Arbeit war die Neugestaltung und gezielte Vermarktung des Raumes, um ihn attraktiver und funktionaler zu machen.</p>
+            <div class="img-placeholder qr-sm"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Umsetzung — CREAM -->
+      <div class="proj-block bg-cream fullwidth">
+        <div class="proj-block-inner">
+          <p class="label">Umsetzung</p>
+          <h2>Planen. Schuften.<br>Koordinieren.</h2>
+          <div class="gold-line"></div>
+          <p>Für die Umsetzung des neuen Ausstellungsraums übernahm ich die Planung, Gestaltung und praktische Einrichtung des Raumes. Zudem koordinierte ich die Zusammenarbeit mit Herstellern und setzte verschiedene Marketingmassnahmen um, darunter Printmedien wie Gebäudebeschriftungen, Kundenstopper und eine Eingangstafel sowie einen Newsletter zur Kundeneinladung.</p>
+        </div>
+      </div>
+
+      <!-- Resultat — CREAM -->
+      <div class="proj-block bg-cream fullwidth">
+        <div class="proj-block-inner">
+          <p class="label">Resultat</p>
+          <h2>Ein Raum<br>der Verkauft.</h2>
+          <div class="gold-line"></div>
+          <div class="proj-text-side">
+            <p>Durch die Neugestaltung entstand aus einem unübersichtlichen Lagerraum ein moderner und ansprechender Ausstellungsraum mit klarer Struktur. Der Raum dient nun nicht mehr nur zur Aufbewahrung, sondern unterstützt aktiv die Präsentation und den Verkauf der Produkte.</p>
+            <div class="img-placeholder qr-sm"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nächstes Projekt — GRÜN -->
+      <div class="naechstes-banner fullwidth" onclick="openProject('werbeclip')">
+        <span class="naechstes-titel">Nächstes Projekt</span>
+        <span class="naechstes-arrow">→</span>
+      </div>
+
+      <!-- Footer Nav + Kontakt — DUNKEL -->
+      <footer class="proj-footer fullwidth bg-dark">
+        <nav class="proj-footer-nav">
+          <a href="#ueber-mich" onclick="closeProject()">Über mich</a>
+          <a href="#skills" onclick="closeProject()">Skills</a>
+          <a href="#projekte" onclick="closeProject()">Projekte</a>
+          <a href="#erfahrung" onclick="closeProject()">Erfahrung</a>
+          <a href="#kontakt" onclick="closeProject()">Kontakt</a>
+        </nav>
+        <div class="proj-footer-kontakt">
+          <div class="proj-footer-text">
+            <p class="label label-gold">KONTAKT</p>
+            <h2>Lass uns<br>zusammenarbeiten.</h2>
+            <p class="footer-sub">Ich würde mich freuen, Sie in einem persönlichen Gespräch genauer kennenzulernen!</p>
+            <div class="kontakt-buttons">
+              <a href="mailto:jara@example.com" class="btn btn-gold">E-Mail</a>
+              <a href="tel:+41" class="btn btn-outline-light">Telefonnummer</a>
+            </div>
+          </div>
+          <div class="img-placeholder proj-footer-img"></div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- ===== PROJEKT 2: WERBECLIP FOODFESTIVAL ===== -->
+  <div id="project-werbeclip" class="project-page">
+    <div class="project-page-inner">
+
+      <button class="back-btn" onclick="closeProject()">← Zurück zu mir</button>
+
+      <!-- Header: Titel links, Logo rechts -->
+      <header class="project-header bg-cream-page">
+        <div class="proj-header-row">
+          <h1>Werbeclip<br>Foodfestival</h1>
+          <div class="img-placeholder proj-logo"></div>
+        </div>
+        <div class="project-meta">
+          <div class="meta-col">
+            <span class="meta-label">Auftraggeber</span>
+            <p>SBW Neue Medien</p>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Aufgabe</span>
+            <p>30 Sekündiger Werbeclip für ein Kulinarisches Foodfestival</p>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Kompetenzen</span>
+            <p>Filmen,<br>Videobearbeitung,<br>Colorgrading</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Video + QR nebeneinander -->
+      <div class="proj-video-row fullwidth-inner">
+        <div class="img-placeholder proj-video"></div>
+        <div class="img-placeholder qr-sm"></div>
+      </div>
+
+      <!-- Ausgangslage — DUNKEL -->
+      <div class="proj-block bg-dark fullwidth">
+        <div class="proj-block-inner">
+          <p class="label label-gold">Ausgangslage</p>
+          <h2>Szene ohne<br>Event.</h2>
+          <div class="gold-line"></div>
+          <p>Die Ausgangslage des Projekts war die Produktion eines 30-sekündigen Werbeclips für ein fiktives Foodfestival. Da kein echtes Festival stattfand, stand uns kein originales Videomaterial zur Verfügung. Deshalb mussten wir eine passende Story entwickeln, die wir mit eigenen Aufnahmen kreativ und realistisch umsetzen konnten.</p>
+        </div>
+      </div>
+
+      <!-- Umsetzung — CREAM -->
+      <div class="proj-block bg-cream fullwidth">
+        <div class="proj-block-inner">
+          <p class="label">Umsetzung</p>
+          <h2>Produzieren. Bearbeiten.<br>Finalisieren.</h2>
+          <div class="gold-line"></div>
+          <p>Für die Umsetzung entwickelten wir eine eigene Storyline und filmten sämtliche Szenen selbst mit eigenen Schauspielern. Anschliessend bearbeiteten wir das Material durch Videoschnitt und Color Grading und passten den Werbeclip sowohl im Hoch- als auch im Querformat an.</p>
+          <div class="img-placeholder proj-shootingboard"></div>
+        </div>
+      </div>
+
+      <!-- Resultat — CREAM -->
+      <div class="proj-block bg-cream fullwidth">
+        <div class="proj-block-inner">
+          <p class="label">Resultat</p>
+          <h2>Musik & Kulinarik<br>vereint.</h2>
+          <div class="gold-line"></div>
+          <p>Durch die kreative Umsetzung entstand trotz fehlender Möglichkeit, ein echtes Foodfestival zu filmen, ein lebendiger und stimmungsvoller Werbeclip. Das Video verbindet Musik und Kulinarik zu einem gemeinsamen Erlebnis und vermittelt die Atmosphäre eines vielfältigen Festivals. So zeigt der Clip, dass das Festival für alle gedacht ist und jede Besucherin und jeder Besucher etwas Passendes für sich entdecken kann.</p>
+          <div class="proj-qr-duo">
+            <div class="img-placeholder qr-sm"></div>
+            <div class="img-placeholder qr-sm"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nächstes Projekt — GRÜN -->
+      <div class="naechstes-banner fullwidth" onclick="openProject('digitalplakat')">
+        <span class="naechstes-titel">Nächstes Projekt</span>
+        <span class="naechstes-arrow">→</span>
+      </div>
+
+      <!-- Footer Nav + Kontakt — DUNKEL -->
+      <footer class="proj-footer fullwidth bg-dark">
+        <nav class="proj-footer-nav">
+          <a href="#ueber-mich" onclick="closeProject()">Über mich</a>
+          <a href="#skills" onclick="closeProject()">Skills</a>
+          <a href="#projekte" onclick="closeProject()">Projekte</a>
+          <a href="#erfahrung" onclick="closeProject()">Erfahrung</a>
+          <a href="#kontakt" onclick="closeProject()">Kontakt</a>
+        </nav>
+        <div class="proj-footer-kontakt">
+          <div class="proj-footer-text">
+            <p class="label label-gold">KONTAKT</p>
+            <h2>Lass uns<br>zusammenarbeiten.</h2>
+            <p class="footer-sub">Ich würde mich freuen, Sie in einem persönlichen Gespräch genauer kennenzulernen!</p>
+            <div class="kontakt-buttons">
+              <a href="mailto:jara@example.com" class="btn btn-gold">E-Mail</a>
+              <a href="tel:+41" class="btn btn-outline-light">Telefonnummer</a>
+            </div>
+          </div>
+          <div class="img-placeholder proj-footer-img"></div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- ===== PROJEKT 3: ANIMATION FOODFESTIVAL (Digital Plakat) ===== -->
+  <div id="project-digitalplakat" class="project-page">
+    <div class="project-page-inner">
+
+      <button class="back-btn" onclick="closeProject()">← Zurück zu mir</button>
+
+      <!-- Header: Titel links, Logo rechts -->
+      <header class="project-header bg-cream-page">
+        <div class="proj-header-row">
+          <h1>Animation<br>Foodfestival</h1>
+          <div class="img-placeholder proj-logo"></div>
+        </div>
+        <div class="project-meta">
+          <div class="meta-col">
+            <span class="meta-label">Auftraggeber</span>
+            <p>SBW Neue Medien</p>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Aufgabe</span>
+            <p>Digitales Plakat für das Foodfestival mit eigenen Illustrationen</p>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Kompetenzen</span>
+            <p>Illustration,<br>Animation,<br>Design</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Plakat-Vorschau + QR nebeneinander -->
+      <div class="proj-plakat-row fullwidth-inner">
+        <div class="img-placeholder proj-plakat"></div>
+        <div class="img-placeholder qr-sm"></div>
+      </div>
+
+      <!-- Ausgangslage — DUNKEL -->
+      <div class="proj-block bg-dark fullwidth">
+        <div class="proj-block-inner">
+          <p class="label label-gold">Ausgangslage</p>
+          <h2>Simple aber<br>aussagekräftig.</h2>
+          <div class="gold-line"></div>
+          <p>Ausgangslage des Projekts war die Entwicklung eines visuellen Auftritts für das Foodfestival. Dafür sollten eigene Illustrationen und Grafiken gestaltet werden, die das Thema Kulinarik und Festivalstimmung widerspiegeln. Auf Basis dieser gestalterischen Elemente entstand anschliessend ein animiertes Plakat, das Aufmerksamkeit erzeugt und das Festival auf moderne Weise präsentiert.</p>
+        </div>
+      </div>
+
+      <!-- Umsetzung — CREAM -->
+      <div class="proj-block bg-cream fullwidth">
+        <div class="proj-block-inner">
+          <p class="label">Umsetzung</p>
+          <h2>Einfach in<br>Szene gebracht.</h2>
+          <div class="gold-line"></div>
+          <p>In der Umsetzung wurden die Illustrationen sorgfältig in Adobe Illustrator erstellt und für die Weiterverarbeitung vorbereitet. Anschliessend wurden die Grafiken in Adobe After Effects importiert, wo sie animiert und zu einem lebendigen, bewegten Plakat zusammengestellt wurden. Dadurch entstand eine dynamische Visualisierung, die das Foodfestival ansprechend präsentiert.</p>
+          <!-- Illustrationen: zentriert nebeneinander -->
+          <div class="proj-illus-row">
+            <div class="img-placeholder proj-illus"></div>
+            <div class="img-placeholder proj-illus"></div>
+            <div class="img-placeholder proj-illus"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resultat — CREAM -->
+      <div class="proj-block bg-cream fullwidth">
+        <div class="proj-block-inner">
+          <p class="label">Resultat</p>
+          <h2>Musik & Kulinarik<br>vereint.</h2>
+          <div class="gold-line"></div>
+          <p>Durch die gestalterische und technische Umsetzung entstand ein animiertes Plakat, das Musik und Kulinarik miteinander verbindet. Verschiedene Speisen und musikalische Elemente verschmelzen zu einer lebendigen Gesamtkomposition und vermitteln die vielfältige Atmosphäre des Foodfestivals.</p>
+          <div class="img-placeholder qr-sm" style="margin-top:2rem;"></div>
+        </div>
+      </div>
+
+      <!-- Nächstes Projekt — GRÜN -->
+      <div class="naechstes-banner fullwidth" onclick="openProject('abschlussarbeit')">
+        <span class="naechstes-titel">Nächstes Projekt</span>
+        <span class="naechstes-arrow">→</span>
+      </div>
+
+      <!-- Footer Nav + Kontakt — DUNKEL -->
+      <footer class="proj-footer fullwidth bg-dark">
+        <nav class="proj-footer-nav">
+          <a href="#ueber-mich" onclick="closeProject()">Über mich</a>
+          <a href="#skills" onclick="closeProject()">Skills</a>
+          <a href="#projekte" onclick="closeProject()">Projekte</a>
+          <a href="#erfahrung" onclick="closeProject()">Erfahrung</a>
+          <a href="#kontakt" onclick="closeProject()">Kontakt</a>
+        </nav>
+        <div class="proj-footer-kontakt">
+          <div class="proj-footer-text">
+            <p class="label label-gold">KONTAKT</p>
+            <h2>Lass uns<br>zusammenarbeiten.</h2>
+            <p class="footer-sub">Ich würde mich freuen, Sie in einem persönlichen Gespräch genauer kennenzulernen!</p>
+            <div class="kontakt-buttons">
+              <a href="mailto:jara@example.com" class="btn btn-gold">E-Mail</a>
+              <a href="tel:+41" class="btn btn-outline-light">Telefonnummer</a>
+            </div>
+          </div>
+          <div class="img-placeholder proj-footer-img"></div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
