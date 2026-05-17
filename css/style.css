@@ -934,7 +934,7 @@ padding-top: 2rem;
 .project-footer {
   background: var(--dark);
   margin: 0 calc(50% - 50vw);
-  padding: 5rem max(2rem, calc((100vw - var(--max-width)) / 2 + 2rem));
+  /* padding: 5rem max(2rem, calc((100vw - var(--max-width)) / 2 + 2rem)); */
 }
 .footer-kontakt {
   color: var(--white);
@@ -1142,3 +1142,200 @@ padding-top: 2rem;
   100% { transform: translateX(calc(-33.333% - 1.5px)); }
 }
 
+/* ---- GROSSER DESKTOP (ab 1400px) ---- */
+@media (min-width: 1400px) {
+  #hero {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .ueber-grid {
+    padding: 0 2rem;
+  }
+
+  #erfahrung {
+    padding: 5rem 2rem;
+  }
+
+  .erfahrung-top > a {
+    margin-right: 2rem;
+  }
+
+  .skills-top > a {
+    margin-right: 2rem;
+  }
+
+  .Showroom-qr-code {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project-qr-row {
+    align-items: flex-start;
+  }
+
+  .project-qr-row h4 {
+    min-width: 200px;
+  }
+}
+
+/* ---- STANDARD DESKTOP (1024px - 1400px) ---- */
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+  #erfahrung {
+    padding: 5rem 3rem;
+  }
+
+  .erfahrung-top > a {
+    margin-right: 3rem;
+    margin-top: 6rem;
+  }
+
+  .skills-top > a {
+    margin-right: 3rem;
+  }
+
+  .Showroom-qr-code {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project-qr-row {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .mockup-foodfestival {
+    width: 60%;
+    margin-left: 10rem;
+  }
+
+  .animationsplakat {
+    width: 40%;
+  }
+}
+
+/* ---- QR-CODE GRÖSSE FIX (alle Bildschirme) ---- */
+.Showroom-qr-code {
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: contain;
+}
+
+.project-text-qr .Showroom-qr-code {
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.project-qr-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-qr-row h4 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0.8;
+  min-width: 160px;
+}
+
+/* ---- EINHEITLICHER SEITENABSTAND ALLE SEKTIONEN ---- */
+#ueber-mich,
+#skills,
+#projekte,
+#erfahrung,
+#kontakt {
+  padding-left: max(2rem, calc((100vw - var(--max-width)) / 2));
+  padding-right: max(2rem, calc((100vw - var(--max-width)) / 2));
+}
+
+#ueber-mich {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.ueber-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 900px) {
+  #ueber-mich,
+  #skills,
+  #projekte,
+  #erfahrung,
+  #kontakt {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* ---- HERO VOLLE BREITE ---- */
+#hero {
+  max-width: 100% !important;
+  padding-left: max(2rem, calc((100vw - var(--max-width)) / 2)) !important;
+  padding-right: max(2rem, calc((100vw - var(--max-width)) / 2)) !important;
+}
+
+/* ---- KONTAKT AUSGERICHTET ---- */
+#kontakt {
+  padding-left: max(2rem, calc((100vw - var(--max-width)) / 2)) !important;
+  padding-right: 0 !important;
+}
+
+.kontakt-inner {
+  padding-left: 0 !important;
+  padding-right: 4rem;
+  max-width: 600px;
+}
+
+@media (max-width: 900px) {
+  #hero {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  #kontakt {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  .kontakt-inner {
+    padding-right: 0 !important;
+    max-width: 100%;
+  }
+}
+
+.qr-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.qr-item h4 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.project-qr-row {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 3rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
