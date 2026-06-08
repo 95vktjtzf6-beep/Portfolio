@@ -1,4 +1,4 @@
-// ---- PROJEKTSEITEN (ausserhalb DOMContentLoaded damit onclick funktioniert) ----
+// ---- PROJEKTSEITEN ----
 let savedScroll = 0;
 
 function openProject(id) {
@@ -27,10 +27,8 @@ function closeProject() {
   }, 400);
 }
 
-// ---- REST läuft nach dem Laden ----
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Navigation
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks  = document.querySelector('.nav-links');
   navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
@@ -38,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
     a.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 
-  // Smooth Scroll
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function (e) {
       const target = document.querySelector(this.getAttribute('href'));
@@ -52,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Aktive Nav Links beim Scrollen
   document.querySelectorAll('section[id]').forEach(sec => {
     new IntersectionObserver(entries => {
       entries.forEach(e => {
