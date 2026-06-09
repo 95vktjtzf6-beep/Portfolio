@@ -1,3 +1,27 @@
+// ---- PROJEKTE SLIDER ----
+let projekteOffset = 0;
+
+function verschiebeGrid(direction) {
+  const outer = document.querySelector('.projekte-slider-outer');
+  const grid  = document.getElementById('projekteGrid');
+  if (!grid || !outer) return;
+
+  const cards   = grid.querySelectorAll('.projekt-karte');
+  const total   = cards.length;   // 4
+  const visible = 3;
+  const maxOffset = total - visible; // 1
+
+  projekteOffset = Math.max(0, Math.min(projekteOffset + direction, maxOffset));
+
+  // Kartenbreite direkt aus dem ersten Element lesen
+  // (erst NACH dem ersten Klick ist layout fertig — daher clientWidth nutzen)
+  const outerInner = outer.clientWidth - 96; // 96 = 2 × 3rem padding in px
+  const gap        = 24; // 1.5rem
+  const cardWidth  = (outerInner - gap * (visible - 1)) / visible;
+
+  grid.style.transform = `translateX(-${projekteOffset * (cardWidth + gap)}px)`;
+}
+
 // ---- PROJEKTSEITEN ----
 let savedScroll = 0;
 

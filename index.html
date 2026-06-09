@@ -157,41 +157,55 @@
           <h2 class="h2-hell">Meine<br />Projekte.</h2>
           <div class="gold-line"></div>
         </div>
-        <div class="projekte-grid reveal reveal-delay">
-          <div class="projekt-karte" onclick="openProject('abschlussarbeit')">
-            <img src="assets/Showroom innen 1.jpg" alt="Beschreibung" />
-            <div class="projekt-info">
-              <h3>Gestalten des Showrooms</h3>
-              <p>Neugestaltung und Vermarktung des neuen Ausstellungsraums.</p>
-              <h4 class="mehr-erfahren">MEHR ERFAHREN</h4>
-            </div>
-            <div class="projekt-arrow">→</div>
-          </div>
-          <div class="projekt-karte" onclick="openProject('werbeclip')">
-            <img src="assets/Mockup Foodfestival.png" alt="Beschreibung" />
-            <div class="projekt-info">
-              <h3>Werbeclip Foodfestival</h3>
-              <p>30 Sekündiger Werbeclip für ein Foodfestival.</p>
-              <h4 class="mehr-erfahren">MEHR ERFAHREN</h4>
-            </div>
-            <div class="projekt-arrow">→</div>
-          </div>
-          <div class="projekt-karte" onclick="openProject('digitalplakat')">
-            <img
-              src="assets/Illustrationen Foodfestival.png"
-              alt="Beschreibung"
-            />
-            <div class="projekt-info">
-              <h3>Illustrieren & Animieren eines Plakats</h3>
-              <p>
-                Animiertes Plakat für das Foodfestival mit eigenen
-                Illustrationen.
-              </p>
-              <h4 class="mehr-erfahren">MEHR ERFAHREN</h4>
-            </div>
-            <div class="projekt-arrow">→</div>
-          </div>
-        </div>
+        
+        
+        <!-- SLIDER WRAPPER -->
+<div class="projekte-slider-outer">
+  <div class="projekte-grid" id="projekteGrid">
+    <div class="projekt-karte" onclick="openProject('abschlussarbeit')">
+      <img src="assets/Showroom innen 1.jpg" alt="Gestalten des Showrooms" />
+      <div class="projekt-info">
+        <h3>Gestalten des Showrooms</h3>
+        <p>Neugestaltung und Vermarktung des neuen Ausstellungsraums.</p>
+        <h4 class="mehr-erfahren">MEHR ERFAHREN</h4>
+      </div>
+      <div class="projekt-arrow">→</div>
+    </div>
+    <div class="projekt-karte" onclick="openProject('werbeclip')">
+      <img src="assets/Mockup Foodfestival.png" alt="Werbeclip Foodfestival" />
+      <div class="projekt-info">
+        <h3>Werbeclip Foodfestival</h3>
+        <p>30 Sekündiger Werbeclip für ein Foodfestival.</p>
+        <h4 class="mehr-erfahren">MEHR ERFAHREN</h4>
+      </div>
+      <div class="projekt-arrow">→</div>
+    </div>
+    <div class="projekt-karte" onclick="openProject('kampagne')">
+      <img src="assets/Kampagne Cleanfix.png" alt="Kampagne Cleanfix" />
+      <div class="projekt-info">
+        <h3>Kampagne Cleanfix CAS</h3>
+        <p>Marketingkampagne für den Cleanfix CAS-Schlittensauger.</p>
+        <h4 class="mehr-erfahren">MEHR ERFAHREN</h4>
+      </div>
+      <div class="projekt-arrow">→</div>
+    </div>
+    <div class="projekt-karte" onclick="openProject('digitalplakat')">
+      <img src="assets/Illustrationen Foodfestival.png" alt="Illustrieren & Animieren" />
+      <div class="projekt-info">
+        <h3>Illustrieren & Animieren eines Plakats</h3>
+        <p>Animiertes Plakat für das Foodfestival mit eigenen Illustrationen.</p>
+        <h4 class="mehr-erfahren">MEHR ERFAHREN</h4>
+      </div>
+      <div class="projekt-arrow">→</div>
+    </div>
+  </div>
+  <!-- Slider-Pfeile (nur sichtbar wenn 4 Projekte) -->
+  <button class="projekte-prev" onclick="verschiebeGrid(-1)" aria-label="Zurück">&#8592;</button>
+  <button class="projekte-next" onclick="verschiebeGrid(1)" aria-label="Weiter">&#8594;</button>
+</div>
+
+
+
       </section>
 
       <!-- ===== ERFAHRUNG — Hintergrund: CREAM ===== -->
@@ -509,7 +523,7 @@ Passendes für sich entdecken kann.
 </div>
           </div>
         </div>
-        <div class="naechstes-projekt" onclick="openProject('digitalplakat')">
+        <div class="naechstes-projekt" onclick="openProject('kampagne')">
           <span>Nächstes Projekt</span><span class="arrow-long">→</span>
         </div>
         <footer class="project-footer">
@@ -676,6 +690,104 @@ Passendes für sich entdecken kann.
         </footer>
       </div>
     </div>
+
+
+    <!-- Projekt: Kampagne Cleanfix -->
+<div id="project-kampagne" class="project-page">
+  <div class="project-page-inner">
+    <button class="back-btn" onclick="closeProject()">
+      ← Zurück zu mir
+    </button>
+    <header class="project-header">
+      <h1>Kampagne<br />Cleanfix CAS</h1>
+      <div class="project-meta">
+        <div class="meta-col">
+          <span class="meta-label">Auftraggeber</span>
+          <p>Sonderegger AG</p>
+        </div>
+        <div class="meta-col">
+          <span class="meta-label">Aufgabe</span>
+          <p>Marketingkampagne für die CAS-Schlittensauger von Cleanfix</p>
+        </div>
+        <div class="meta-col">
+          <span class="meta-label">Kompetenzen</span>
+          <p>Marketing, Design, Kampagnenführung, Auswertung</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bild oben — ersetze mit deinem Asset 
+    <img src="assets/Kampagne Cleanfix.png" alt="Kampagne Cleanfix" style="width:100%; margin-bottom:3rem; object-fit:cover; max-height:480px;" />
+-->
+    <div class="project-section project-section-dark">
+      <div class="project-section-inner">
+        <p class="label label-gold">Ausgangslage</p>
+        <h2>Ein Produkt.<br />Eine Botschaft.</h2>
+        <div class="gold-line"></div>
+        <p>
+          Für die Marke Cleanfix übernahm ich die Marketingkampagne für den CAS-Schlittensauger. Der Auftrag umfasste die gesamte Kampagnenführung, von der strategischen Planung über die kreative Umsetzung bis hin zur datenbasierten Auswertung. Ziel war es, die Kernbotschaft des Produkts kabellos, kraftvoll und effizient, klar und zielgruppengerecht zu kommunizieren und die Verkaufszahlen messbar zu steigern.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-section project-section-light">
+      <div class="project-section-inner">
+        <p class="label">Umsetzung</p>
+        <h2>Planen. Gestalten.<br />Auswerten.</h2>
+        <div class="gold-line"></div>
+        <p>
+          In der Planungsphase analysierte ich die Zielgruppe und definierte die relevanten Kommunikationskanäle sowie die Kernbotschaften der Kampagne. Darauf aufbauend entwickelte ich ein Design, das sich durch alle Massnahmen zog. Die kreativen Inhalte umfassten einen Newsletter sowie eine E-Mail-Signatur und einen digitalen Banner, die gestalterisch und inhaltlich auf die Produktstärken ausgerichtet waren. Dabei legte ich besonderen Wert auf eine klare visuelle Hierarchie, eine wirkungsvolle Call-to-Action-Führung und eine durchgehend markenkonforme Bildsprache. Anschliessend übernahm ich die Auswertung der Kampagne anhand der definierten KPIs.
+        </p>
+        <div class="illustration-row" style="margin-top:2rem; flex-wrap:wrap; gap:1.5rem; align-items:flex-start;">
+          <div>
+            <p class="meta-label" style="font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:#537754; opacity:0.6; margin-bottom:0.5rem;">E-Mailsignatur</p>
+            <!-- Ersetze mit deinem Asset: assets/Kampagne Signatur.png -->
+            <img src="assets/Kampagne Signatur.png" alt="E-Mail Signatur" style="max-width:320px; border:1px solid #e0ddd5;" />
+          </div>
+          <div>
+            <p class="meta-label" style="font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:#537754; opacity:0.6; margin-bottom:0.5rem;">Digitaler Banner</p>
+            <!-- Ersetze mit deinem Asset: assets/Kampagne Banner.png -->
+            <img src="assets/Kampagne Banner.png" alt="Digitaler Banner" style="max-width:320px; border:1px solid #e0ddd5;" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section project-section-cream">
+      <div class="project-section-inner">
+        <p class="label">Resultat</p>
+        <h2>Kabellos.<br />Kraftvoll. Sauber.</h2>
+        <div class="gold-line"></div>
+        <div class="project-text-qr">
+          <p>
+            Durch die gezielte Kampagnenführung entstand ein konsistenter und wirkungsvoller Markenauftritt für den CAS-Schlittensauger. Die Massnahmen kommunizierten die Produktstärken klar und zielgruppengerecht, steigerten die Aufmerksamkeit und lieferten messbare Resultate anhand der definierten KPIs.
+          </p>
+          <!-- QR-Code Platzhalter — ersetze src mit deinem Asset -->
+          <img src="assets/Kampagne QR.png" alt="Newsletter ansehen" class="Showroom-qr-code" />
+        </div>
+        <h4 style="margin-top:1rem;"><a href="https://mailchi.mp/873b0a849e50/kabellos-kraftvoll-sauber-cleanfix-cas-sauger-jetzt-entdecken" target="_blank" rel="https://mailchi.mp/873b0a849e50/kabellos-kraftvoll-sauber-cleanfix-cas-sauger-jetzt-entdecken">Newsletter ansehen →</a></h4>
+      </div>
+    </div>
+
+    <div class="naechstes-projekt" onclick="openProject('digitalplakat')">
+      <span>Nächstes Projekt</span><span class="arrow-long">→</span>
+    </div>
+
+<footer class="project-footer">
+  <section style="background:var(--dark); padding:6rem max(2rem, calc((100vw - 1100px) / 2 + 2rem)); display:flex; align-items:flex-end; justify-content:space-between; overflow:hidden;">
+    <div style="flex:1; max-width:600px;">
+      <p class="label label-gold">KONTAKT</p>
+      <h2 style="color:var(--white); font-size:clamp(2.5rem, 5vw, 5rem); margin-bottom:1rem;">Ein persönliches Gespräch sagt mehr als jede Bewerbung!</h2>
+      <p style="color:rgba(255,255,255,0.6); margin-bottom:2rem;">Ich würde mich freuen, Sie besser kennenzulernen!</p>
+      <div class="kontakt-buttons">
+        <a href="mailto:jara.haffter@bluewin.ch" class="btn btn-gold">E-Mail</a>
+        <a href="tel:+41789761591" class="btn btn-outline-light">Telefon</a>
+      </div>
+    </div>
+  </section>
+</footer>
+  </div>
+</div>
 
     <script src="js/main.js"></script>
   </body>
