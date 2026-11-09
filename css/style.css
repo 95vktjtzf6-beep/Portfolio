@@ -704,3 +704,54 @@ p {
   .mockup-foodfestival { width: 60%; margin-left: 10rem; }
   .animationsplakat { width: 40%; }
 }
+
+
+
+
+/* ===== FOOTER STARTSEITE KORRIGIEREN ===== */
+
+#kontakt.kontakt-startseite {
+  display: block;
+  width: 100%;
+  padding: 5rem max(2rem, calc((100vw - 1100px) / 2));
+  background: #2c2b27;
+}
+
+#kontakt.kontakt-startseite .kontakt-inner {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  padding: 0;
+  margin: 0;
+  flex: none;
+}
+
+#kontakt.kontakt-startseite h2 {
+  width: 100%;
+  max-width: 700px;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.15;
+  color: #ffffff;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+#kontakt.kontakt-startseite p {
+  max-width: 600px;
+}
+
+#kontakt.kontakt-startseite .kontakt-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  #kontakt.kontakt-startseite {
+    padding: 3rem 1.5rem;
+  }
+
+  #kontakt.kontakt-startseite h2 {
+    font-size: 2.5rem;
+  }
+}
